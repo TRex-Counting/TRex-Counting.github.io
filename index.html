@@ -146,39 +146,6 @@
     </section><!-- #about -->
 
     <!--==========================
-          Gradio Section
-    ============================-->
-    <section id="demo">
-      <div class="container">
-        <div class="section-header">
-          <h2>Demo</h2>
-          <p>We distributed the demos to 8 GTX 3090 for running and allocated the resources using a backend scheduler. If
-            you are
-            queued, please be patient or refresh the page!</p>
-          <p>
-            <!-- list four points for how to use this demo -->
-          <ul>
-            <li>Step1: Upload target image and reference image to Input Detection Image and Input Reference Image,
-              respectively. You are free to use two different images and CAT will work in workflow3 (Checkout
-              our Technical Report for more details). </li>
-            <li>Step2: Draw box or point on reference image. To draw box, you need to click on the upper left point of
-              the box, and then the lower right point to draw a box.
-              To draw point, first select the Draw Point icon and then draw point.
-            </li>
-            <li>Step3: Touch Run CAT to run!</li>
-            <li>Step4: If the detection results is not satisfying, e.g. there are missing or mis-detected objects, you
-              can click Draw Negative to add negative prompt, so that CAT will work in workflow2</li>
-            <li><strong>If the guidence is still confusing, we recommend watching the demo video</strong></li>
-            </p>
-        </div>
-        <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.40.1/gradio.js"></script>
-        <div id="demo">
-          <gradio-app src="http://192.168.81.138:1234/"></gradio-app>
-        </div>
-    </section>
-
-
-    <!--==========================
       Services Section
     ============================-->
     <section id="services">
@@ -462,6 +429,62 @@
     </section> -->
 
     <!--==========================
+                  Call to Action before Gradio
+            ============================-->
+    <section id="call-to-action" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Notices for the Demo</h3>
+            <p class="cta-text">Limited by our current implementaion, drawing box is not that intuitive. You need to 
+                <strong>click for the upper left point then the lower right point to draw a box</strong>. We will improve this in the future
+              version. 🐱🐱 Hope you don't mind 🐱🐱.
+            </p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#demo">Try Demo!</a>
+          </div>
+        </div>
+    
+      </div>
+    </section><!-- #call-to-action -->
+    
+    
+    <!--==========================
+              Gradio Section
+        ============================-->
+    <section id="demo">
+      <div class="container">
+        <div class="section-header">
+          <h2>Demo</h2>
+          <p>We distributed the demos to 8 GTX 3090 for running and allocated the resources using a backend scheduler. If
+            you are
+            queued, please be patient or refresh the page!</p>
+          <p>
+            <!-- list four points for how to use this demo -->
+          <ul>
+            <li>Step1: Upload target image and reference image to Input Detection Image and Input Reference Image,
+              respectively. You are free to use two different images and CAT will work in workflow3 (Checkout
+              our Technical Report for more details). </li>
+            <li>Step2: Draw box or point on reference image. To draw box, you need to click on the upper left point of
+              the box, and then the lower right point to draw a box.
+              To draw point, first select the Draw Point icon and then draw point.
+            </li>
+            <li>Step3: Touch Run CAT to run!</li>
+            <li>Step4: If the detection results is not satisfying, e.g. there are missing or mis-detected objects, you
+              can click Draw Negative to add negative prompt, so that CAT will work in workflow2</li>
+            <li><strong>If the guidence is still confusing, we recommend watching the demo video</strong></li>
+            </p>
+        </div>
+        <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.40.1/gradio.js"></script>
+        <div id="demo">
+          <gradio-app src="http://192.168.81.138:1234/"></gradio-app>
+        </div>
+    </section>
+
+
+
+    <!--==========================
       Our Team Section
     ============================-->
     <section id="team" class="wow fadeInUp">
@@ -479,6 +502,21 @@
                   <a href="https://mountchicken.github.io/"><i class="fa fa-home"></i></a>
                   <a href="https://scholar.google.com/citations?user=fzIWn40AAAAJ&hl=zh-CN"><i class="fa fa-graduation-cap"></i></a>
                   <a href="https://github.com/Mountchicken"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-4">
+            <div class="member">
+              <div class="pic"><img src="img/team-4.jpeg" alt=""></div>
+              <div class="details">
+                <h4>Feng Li</h4>
+                <div class="social">
+                  <a href="https://fengli-ust.github.io/"><i class="fa fa-home"></i></a>
+                  <a href="https://scholar.google.com/citations?hl=zh-CN&user=ybRe9GcAAAAJ"><i
+                      class="fa fa-graduation-cap"></i></a>
+                  <a href="https://github.com/FengLi-ust"><i class="fa fa-github"></i></a>
                 </div>
               </div>
             </div>
@@ -507,20 +545,6 @@
                   <a href="https://www.lsl.zone/"><i class="fa fa-home"></i></a>
                   <a href="https://scholar.google.com/citations?user=nkSVY3MAAAAJ&hl=zh-CN&oi=ao"><i class="fa fa-graduation-cap"></i></a>
                   <a href="https://github.com/SlongLiu"><i class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4">
-            <div class="member">
-              <div class="pic"><img src="img/team-4.jpeg" alt=""></div>
-              <div class="details">
-                <h4>Feng Li</h4>
-                <div class="social">
-                  <a href="https://fengli-ust.github.io/"><i class="fa fa-home"></i></a>
-                  <a href="https://scholar.google.com/citations?hl=zh-CN&user=ybRe9GcAAAAJ"><i class="fa fa-graduation-cap"></i></a>
-                  <a href="https://github.com/FengLi-ust"><i class="fa fa-github"></i></a>
                 </div>
               </div>
             </div>
