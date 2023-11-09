@@ -27,6 +27,8 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -434,14 +436,15 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Notices for the Demo</h3>
-            <p class="cta-text">Limited by our current implementaion, drawing box is not that intuitive. You need to 
-                <strong>click for the upper left point then the lower right point to draw a box</strong>. We will improve this in the future
-              version. Hope you don't mind.
+            <h3 class="cta-title">How to use the Demo</h3>
+            <p class="cta-text">If you are new to Eagle, we recommend you to watch the demo video first, so 
+              you can know Eagle better.
             </p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#demo">Try Demo!</a>
+            <a href="demo_video.mp4" target="_blank">
+              <img src="img/video.png" alt="Video Thumbnail">
+            </a>
           </div>
         </div>
     
@@ -462,13 +465,12 @@
               respectively. You are free to use two different images and Eagle will work in workflow3 (Checkout
               our Technical Report for more details). </li>
             <li>Step2: Draw box or point on reference image. To draw box, you need to click on the upper left point of
-              the box, and then the lower right point to draw a box.
-              To draw point, first select the Draw Point icon and then draw point.
+              the box, and then the lower right point to draw a box. To draw point, first select the Draw Point option and then draw point.
             </li>
-            <li>Step3: Touch Run Eagle to run!</li>
+            <li>Step3: Run Eagle.</li>
             <li>Step4: If the detection results is not satisfying, e.g. there are missing or mis-detected objects, you
-              can click Draw Negative to add negative prompt, so that Eagle will work in workflow2</li>
-            <li><strong>If the guidence is still confusing, we recommend watching the demo video</strong></li>
+              can click Draw Negative to add negative prompt, so that Eagle will work in workflow2.</li>
+            <li><strong>If the guidence is still confusing, we recommend watching the demo video.</strong></li>
             </p>
         </div>
         <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.40.1/gradio.js"></script>
