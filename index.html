@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
   <meta charset="utf-8">
   <title>Eagle Counting</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -93,7 +95,7 @@
   <section id="intro">
 
     <div class="intro-content">
-      <h2>Count <span>Anything</span><br>You Prompt!</h2>
+      <h2><span>Counting</span><br>by Visual Prompting</h2>
       <div>
         <a href="#about" class="btn-get-started scrollto">Technical Report</a>
         <a href="#demo" class="btn-projects scrollto">Try Demo!</a>
@@ -121,7 +123,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 about-img">
+            <a href="img/about-img.png" data-lightbox="image-1">>
             <img src="img/about-img.png" alt="">
+            </a>
           </div>
 
           <div class="col-lg-6 content">
@@ -144,7 +148,63 @@
         </div>
 
       </div>
-    </section><!-- #about -->
+    </section>
+
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          
+    
+          <div class="col-lg-6 content">
+            <h2>Structure of Eagle</h2>
+            <h3>Eagle consists of three components, including an image encoder, a prompt encoder and a box decoder:</h3>
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> <strong>User Interaction: </strong>Users provide visual examples by marking the reference image, specifying the object of interest. Eagle then detects all
+              instances with a similar pattern in the target image, counting the total detected boxes..</li>
+              <li><i class="ion-android-checkmark-circle"></i> <strong>Interactive Prompt Addition: </strong>Users can interactively add prompts on missed or falsely detected objects, using Eagle's visualization output for
+              guidance.</li>
+              <li><i class="ion-android-checkmark-circle"></i> <strong>Continual Refinement and Efficiency: </strong>This process allows for ongoing improvement of Eagle's predictions, with users having the ability to judge the accuracy
+              of results. Importantly, this interaction is both fast and resource-efficient, as each round of interaction only
+              requires activating Eagle's decoder.</li>
+            </ul>
+    
+          </div>
+          <div class="col-lg-6 about-img">
+            <a href="img/structure.png" data-lightbox="image-1">
+              <img src="img/structure.png" alt="">
+            </a>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <a href="img/workflow.png" data-lightbox="image-1">
+              <img src="img/workflow.png" alt="">
+            </a>
+          </div>
+    
+          <div class="col-lg-6 content">
+            <h2>Workflows of Eagle</h2>
+            <h3>Eagle offers three major interactive workflows:</h3>
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> <strong>Positive-only Prompt Mode: </strong>Users can detect similar objects in an image with just a single click or box drawing. Additional visual prompts can be
+              added for densely packed or small objects..</li>
+              <li><i class="ion-android-checkmark-circle"></i> <strong>Positive with Negative Prompt Mode: </strong>To address false detections caused by similar objects, users can correct the outcome by applying negative prompts to the
+              erroneously detected objects.</li>
+              <li><i class="ion-android-checkmark-circle"></i> <strong>Cross Image Prompt Mode: </strong>This feature supports counting across different reference and target images, ideal for automatic annotation. Users
+              prompt on one image, and Eagle annotates the others automatically.</li>
+            </ul>
+    
+          </div>
+        </div>
+    
+      </div>
+    </section>
 
     <!--==========================
       Services Section
@@ -163,7 +223,7 @@
             <div class="box wow fadeInLeft">
               <div class="icon"><i class="fa fa-bar-chart"></i></div>
               <h4 class="title"><a href="">Object Counting</a></h4>
-              <p class="description">Eagle is a fundation model for object counting that count anything including but not
+              <p class="description">Eagle can count anything including but not
                 limited to Agriculture, Industry, Livestock, Biology, Medical, Retail, Electronic, Transportation, Logistics, Human, etc.</p>
             </div>
           </div>
@@ -432,7 +492,7 @@
     <!--==========================
                   Call to Action before Gradio
             ============================-->
-    <section id="call-to-action" class="wow fadeInUp">
+    <!-- <section id="call-to-action" class="wow fadeInUp">
       <div class="container">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
@@ -449,17 +509,15 @@
         </div>
     
       </div>
-    </section><!-- #call-to-action -->
-    
+    </section> -->
     
     <!--==========================
               Gradio Section
         ============================-->
-    <section id="demo">
+    <!-- <section id="demo">
       <div class="container">
         <div class="section-header">
           <h2>Demo</h2>
-            <!-- list four points for how to use this demo -->
           <ul>
             <li>Step1: Upload target image and reference image to Input Detection Image and Input Reference Image,
               respectively. You are free to use two different images and Eagle will work in workflow3 (Checkout
@@ -475,9 +533,9 @@
         </div>
         <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.40.1/gradio.js"></script>
         <div id="demo">
-          <gradio-app src="http://192.168.81.138:1234/"></gradio-app>
+          <gradio-app src="https://eagle-counting.deepdataspace.com/"></gradio-app>
         </div>
-    </section>
+    </section> -->
 
 
 
@@ -590,6 +648,18 @@
     </section><!-- #team -->
 
     <!--==========================
+          Acknowlege Section
+        ============================-->
+
+    <section id="portfolio" class="wow fadeInUp">
+      <div class="container">
+        <div class="section-header">
+          <h2>Acknowledgments</h2>
+          <p>We would like to thank the <a href="https://docs.deepdataspace.com/">DeepDataSpace</a> team for deveploping the Demo.</p>
+        </div>
+      </div>
+
+    <!--==========================
       Contact Section
     ============================-->
     <section id="contact" class="wow fadeInUp">
@@ -601,19 +671,24 @@
 
         <div class="row contact-info">
 
-          <div class="col-md-6">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Address</h3>
-              <address>中国深圳市福田区市花路5号长富金茂大厦1号楼3908</address>
-            </div>
+          <div class="col-md-4 text-center">
+            <a href="https://www.idea.edu.cn">
+              <img src="img/idea_icon.png" alt="Company Logo" style="max-width: 100%; height: auto;">
+            </a>
+          </div>
+          
+          <div class="col-md-4 text-center">
+            <a href="https://docs.deepdataspace.com/">
+              <img src="img/dds_icon.png" alt="Company Logo" style="max-width: 40%; height: auto;">
+            </a>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-4  text-center">
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@example.com">mountchicken@outlook.com</a></p>
+              <p><a href="mountchicken@outlook.com">mountchicken@outlook.com</a></p>
+              <p><a href="leizhang@idea.edu.cn">leizhang@idea.edu.cn</a></p>
             </div>
           </div>
 
