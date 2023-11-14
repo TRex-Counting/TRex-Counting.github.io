@@ -36,6 +36,40 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+#video-section {
+  padding-top: 40px;
+  /* adjust as needed */
+}
+
+/* Override Bootstrap column padding */
+.row.no-gutters .col-lg-4 {
+  padding-left: 5px;
+  /* Reduce left padding */
+  padding-right: 5px;
+  /* Reduce right padding */
+}
+
+/* Adjustments for custom video container */
+.video-container.new-col {
+  margin: 0;
+  /* Remove any default margins */
+  padding: 0;
+  /* Remove any default padding */
+}
+
+.my-video {
+  width: 100%;
+  height: 600px;
+  /* adjust as needed */
+  object-fit: contain;
+}
+
+.new-class {
+  height: 450px;
+  margin: 0;
+  /* adjust as needed */
+}
+
 /* Back to top button */
 .back-to-top {
   position: fixed;
