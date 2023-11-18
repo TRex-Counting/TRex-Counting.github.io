@@ -70,13 +70,19 @@ h1, h2, h3, h4, h5, h6 {
   /* adjust as needed */
 }
 
+
+.video0 {
+  height: 500px;
+  /* adjust as needed */
+}
+
 .video1 {
-  height: 360px;
+  height: 300px;
   /* adjust as needed */
 }
 
 .video2 {
-  height: 280px;
+  height: 230px;
   /* adjust as needed */
 }
 
